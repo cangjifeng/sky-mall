@@ -1,0 +1,21 @@
+server:
+  port: 8007
+
+spring:
+  application:
+    name: sky-mall
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  client:
+    service-url:
+      defaultZone: http://localhost:8005/eureka/
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+
+
