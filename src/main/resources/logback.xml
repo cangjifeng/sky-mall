@@ -15,7 +15,7 @@
 	  contextName 节点用于配置程序的名称，默认是default
 	  设置上下文名称，用于区分不同的程序，默认是default
 	-->
-	<contextName>cloud-order</contextName>
+	<contextName>sky-mall</contextName>
 	<!--
 	  property 节点用于设计变量，有两个属性 name 和 value
 	  设置完变量之后，后面使用通过" ${} " 方式
@@ -40,7 +40,7 @@
 	</appender>
 	<!-- 按照每天生成日志文件 -->
 	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${LOG_HOME}/cloud-order.log</file>
+		<file>${LOG_HOME}/sky-mall.log</file>
 
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!--日志文件输出的文件名 -->
